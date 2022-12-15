@@ -9,11 +9,11 @@ DOCS for any service tell you how to access the cloud function from the client (
 */
 
 async function getToDos(){
-    const url = '/.netlify/functions/todos'
-   const res=await fetch(url)
-    const data = await res.json()
+    const res = await fetch('/.netlify/functions/todos')
    
-    document.querySelector('p').textContent = data.path
+    const data = await res.json()
+   console.log(data)
+    
 }
 
 getToDos()
