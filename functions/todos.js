@@ -6,7 +6,7 @@ export async function handler(event, context){
     const data = await fs.readFile(filePath, "utf-8")
     return {
         statusCode: 200,
-        body: JSON.stringify({path:"/todos/all"})
+        body: data
     }
 }
 
