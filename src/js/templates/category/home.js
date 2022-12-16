@@ -5,7 +5,7 @@ function home({ uid, todo, category, startDate, endDate, status }) {
   const template = `
     <section class="border-l-8 border-blue-500/80 py-4 px-5   mb-1 bg-white mx-auto  ">
     <header class="flex items-center justify-between">
-      <h2 class="font-semibold text-[10px] text-blue-600/80  bg-blue-50 px-2 py-0.5 rounded-md   w-fit" >
+      <h2 class="font-semibold text-[10px] text-blue-900/80  bg-blue-50 px-2 py-0.5 rounded-md   w-fit" >
      Home <span class="">${status}</span>
       </h2>
       <button>
